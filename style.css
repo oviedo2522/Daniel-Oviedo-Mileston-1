@@ -1,3 +1,52 @@
-* {
-    background-color: green;
+.Title {
+    font-family: "Bungee Spice", sans-serif;
+    text-align: center;
+    
 }
+
+.card {
+    width: 101px;
+    height: 101px;
+    background-color: rgb(56, 65, 126);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row-resize;
+}
+
+body {
+    background-color: rgb(33, 137, 182);
+}
+
+#resetButton {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e2510d;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #resetButton:hover {background-color: #c0fd0b}
+  
+  #resetButton:active {
+    background-color: #121609;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
