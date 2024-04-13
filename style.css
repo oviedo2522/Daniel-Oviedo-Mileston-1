@@ -12,10 +12,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 24px; 
+    content: attr(data-symbol);
+    font-size: 10em; /* Adjust the size as needed */
     
   }
 
+  
 
 .board {
   display: flex;
