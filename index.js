@@ -1,5 +1,5 @@
 
-let symbols = ['♥', '♦', '♣', '♠', '★', '☀', '☁', '♫'];
+let symbols = ['🐧', '🦊', '🦍', '🐶', '🦉', '🦝', '🐵', '🐸'];
 let cards = [];
 let flippedCards = [];
 let matches = 0;
@@ -17,17 +17,24 @@ function shuffle(array) {
 }
 
 function createBoard() {
-    const board = document.getElementById('board');
+    const board = document.getElementById("board");
     cards = shuffle([...symbols, ...symbols]);
     for (let i = 0; i < cards.length; i++) {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.dataset.symbol = cards[i];
-        card.textContent = '?';
-        card.addEventListener('click', flipCard);
-        board.appendChild(card);
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.dataset.symbol = cards[i];
+      card.textContent = "❔";
+      board.appendChild(card);
     }
-}
+
+    // Attach event listener to the board
+    board.addEventListener("click", function (event) {
+      const clickedElement = event.target;
+      if (clickedElement.classList.contains("card")) {
+        flipCard.call(clickedElement);
+      }
+    });
+  }
 
 function flipCard() {
     if (flippedCards.length < 2 && !flippedCards.includes(this)) {
@@ -49,8 +56,8 @@ function checkMatch() {
             alert('Congratulations! You matched all the pairs.');
         }
     } else {
-        card1.textContent = '?';
-        card2.textContent = '?';
+        card1.textContent = '❔';
+        card2.textContent = '❔';
     }
     flippedCards = [];
 }
