@@ -20,22 +20,22 @@ function createBoard() {
     const board = document.getElementById("board");
     cards = shuffle([...symbols, ...symbols]);
     for (let i = 0; i < cards.length; i++) {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.dataset.symbol = cards[i];
-      card.textContent = "❔";
-      board.appendChild(card);
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.dataset.symbol = cards[i];
+        card.textContent = "❔";
+        board.appendChild(card);
     }
 
     // Attach event listener to the board
     board.addEventListener("click", function (event) {
-      const clickedElement = event.target;
-      if (clickedElement.classList.contains("card")) {
-        flipCard.call(clickedElement);
-      }
+        const clickedElement = event.target;
+        if (clickedElement.classList.contains("card")) {
+            flipCard.call(clickedElement);
+        }
     });
-  }
-// Function to flip cards palying game
+}
+// Function to flip cards playing game
 function flipCard() {
     if (flippedCards.length < 2 && !flippedCards.includes(this)) {
         flippedCards.push(this);
