@@ -4,6 +4,7 @@ let cards = [];
 let flippedCards = [];
 let matches = 0;
 
+//Function shuffle cards
 function shuffle(array) {
     let currentIndex = array.length, tempValue, randomIndex;
     while (currentIndex !== 0) {

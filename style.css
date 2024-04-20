@@ -48,24 +48,7 @@
  }
 
 
-
-
- h2 {
-  font-family: "Bungee Spice", sans-serif;
-  text-align: right;
- 
-
-
- }
-
- .Instructions {
-  font-family: "Bungee Spice", sans-serif;
- 
-
-  }
-
  #resetButton {
-   /* display: inline-block; */
    padding: 15px 25px;
    font-size: 24px;
    cursor: pointer;
