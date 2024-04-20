@@ -1,4 +1,4 @@
-
+// Cards symbol//
 let symbols = ['🐧', '🦊', '🦍', '🐶', '🦉', '🦝', '🐵', '🐸'];
 let cards = [];
 let flippedCards = [];
@@ -35,7 +35,7 @@ function createBoard() {
       }
     });
   }
-
+// Function to flip cards palying game
 function flipCard() {
     if (flippedCards.length < 2 && !flippedCards.includes(this)) {
         flippedCards.push(this);
@@ -61,7 +61,7 @@ function checkMatch() {
     }
     flippedCards = [];
 }
-
+// Function to reset the game
 function resetGame() {
     const board = document.getElementById('board');
     board.innerHTML = '';
