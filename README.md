@@ -1,6 +1,4 @@
-# Title of Project (This is usually at the top of a repo's main README.md file.)
-
-Card Matching Game
+# Card Matching Game
 
 ## Description
 
