@@ -2,10 +2,10 @@
 
 ## Description
 
-Shuffle the cards and lay them out face down in a grid formation.
-Players take turns, to the left, turning any two cards picture-side-up. The cards must be turned over completely, so that all players can see them.
+Turning any two cards picture-side-up.
+The cards must be turned over completely, so that all players can see them.
 If the two cards match, the player keeps the cards and has the right to play again.
-If the two cards do not match, the player turns them back over and it is now the turn of.
+If the two cards do not match,it is now the turn of.
 The game continues until all cards have been matched and removed from the playing area.
 
 ## Deployment

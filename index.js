@@ -27,8 +27,6 @@ function createBoard() {
         card.textContent = "❔";
         board.appendChild(card);
     }
-
-    // Attach event listener to the board
     board.addEventListener("click", function (event) {
         const clickedElement = event.target;
         if (clickedElement.classList.contains("card")) {
